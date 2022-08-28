@@ -5,6 +5,8 @@ import NavBar from './componet/Navbar';
 import Banner from './componet/Banner';
 import Skill from './componet/Skill';
 import Projects from './componet/Projects';
+import { Contact } from './componet/Contact';
+import { Footer } from './componet/Footer';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Banner/>
       <Skill/>
       <Projects/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

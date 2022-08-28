@@ -69,7 +69,7 @@ const Skill = () => {
             </Col>
         </Row>
     </Container>
-    <img className='background-image-left' src={coloSharp} alt="" />
+    {/* <img className='background-image-left' src={coloSharp} alt="" /> */}
     </section>;
 }
 
