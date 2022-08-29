@@ -27,15 +27,18 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await axios.post("https://porfolio-production.up.railway.app/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: formDetails,
-    });
+    let response = await axios.post("http://localhost:3001/contact", formDetails
+    //  {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json;charset=utf-8",
+    //   },
+    //   body: formDetails,
+    // }
+    );
     setButtonText("Send");
-    let result = await response.json();
+    let result = await response.data;
+    console.log('/*/*/*/',result)
     setFormDetails(formInitialDetails);
     if (result.code == 200) {
       setStatus({ succes: true, message: 'Message sent successfully'});

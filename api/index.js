@@ -30,8 +30,8 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-  const {firstName,lastName,email,message,phone}= req.body.body
-  console.log(req.body.body)
+  const {firstName,lastName,email,message,phone}= req.body
+  console.log(req.body)
  // const name = req.body.firstName + req.body.lastName;
  // const email = req.body.email;
   //const message = req.body.message;
