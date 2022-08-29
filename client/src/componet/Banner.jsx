@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import  miFoto  from "../assets/img/miFoto.jpeg";
+import miFoto from "../assets/img/miFoto.jpeg";
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -29,13 +29,13 @@ const Banner = () => {
     if (isDeleting) {
       setDelta((prevDelta) => prevDelta / 2);
     }
-    if(!isDeleting && updatedText === fullText){
-        setIsDeleting(true)
-        setDelta(period)
-    }else if(isDeleting && updatedText === ''){
-        setIsDeleting(false)
-        setLoopNum(loopNum + 1)
-        setDelta(500)
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(500);
     }
   };
   return (
@@ -50,10 +50,13 @@ const Banner = () => {
             </h1>
             <p>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-              explicabo mollitia reiciendis, harum quidem perspiciatis eligendi
-              temporibus optio voluptatum at natus ipsa aperiam doloribus
-              ratione non earum alias quasi quam.
+              Desarrollador full stack con afinidad al Back-End, curioso y
+              apasionado por la programacion, me concidero con la capacidad de
+              ajustarme a cualquier area del sector ya que cuento con gran
+              capacidad de adaptación y afrontar nuevos retos. Durante mi
+              trayectoria laboral me destaque como cocinero por aproximadamente
+              10 años; donde tuve la oportunidad de aprender a manejar la
+              presion, dirigir y trabajar en equipo
             </p>
             <button onClick={() => console.log("conectado")}>
               Let's connet <ArrowRightCircle size={25} />{" "}
