@@ -30,15 +30,17 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
-  const name = req.body.firstName + req.body.lastName;
-  const email = req.body.email;
-  const message = req.body.message;
-  const phone = req.body.phone;
+  const {firstName,lastName,email,message,phone}= req.body.body
+  console.log(req.body.body)
+ // const name = req.body.firstName + req.body.lastName;
+ // const email = req.body.email;
+  //const message = req.body.message;
+ // const phone = req.body.phone;
   const mail = {
-    from: name,
+    from: firstName,
     to: `${EMAIL}`,
     subject: "Contact Form Submission - Portfolio",
-    html: `<p>Name: ${name}</p>
+    html: `<p>Name: ${firstName+' '+ lastName}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>
            <p>Message: ${message}</p>`,
