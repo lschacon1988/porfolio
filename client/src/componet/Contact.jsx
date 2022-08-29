@@ -27,7 +27,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await axios.post("http://localhost:3001/contact", {
+    let response = await axios.post("https://porfolio-production.up.railway.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
