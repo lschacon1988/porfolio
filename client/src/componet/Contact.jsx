@@ -27,33 +27,34 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    try {
-      result = await axios({
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        },
-        url: "https://porfolioapp.vercel.app/contact",
-        data: {
-          something: formDetails
-        },
-        method: 'POST'
-      });
-    } catch (err) {
-      console.error(err);
-    }
+    // try {
+    //   result = await axios({
+    //     headers: {
+    //       'Access-Control-Allow-Origin': '*',
+    //       Accept: 'application/json',
+    //       'Content-Type': 'application/json'
+    //     },
+    //     url: "https://porfolioapp.vercel.app/contact",
+    //     data: {
+    //       something: formDetails
+    //     },
+    //     method: 'POST'
+    //   });
+    // } catch (err) {
+    //   console.error(err);
+    // }
     
-    // let response = await axios.post("https://porfolioapp.vercel.app/contact",
-    // //  {
-    // //   method: "POST",
-    // //   headers: {
-    // //     "Content-Type": "application/json;charset=utf-8",
-    // //   },
-    // //   body: formDetails,
-    // // }
+    let response = await axios.post("https://porfolioapp.vercel.app/contact",
+     {
+      method: "POST",
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: formDetails,
+    }
 
-    // );
+    );
     setButtonText("Send");
     let result = await response.data;
     console.log('/*/*/*/',result)
@@ -63,7 +64,7 @@ export const Contact = () => {
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
-    return result;
+    // return result;
   };
 
   return (
