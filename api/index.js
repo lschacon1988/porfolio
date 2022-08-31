@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const morgan = require('morgan')
+const bodyParser = require('body-parser');
 
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
@@ -12,6 +13,8 @@ const { EMAIL, PASSWORD_EMAIL } = process.env;
 const PORT = process.env.PORT || 3001
 const app = express();
 app.use(cors());
+server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+server.use(bodyParser.json({ limit: '50mb' }));
 app.use(cookieParser())
 app.use(morgan('dev'))
 app.use((req, res, next) => {
