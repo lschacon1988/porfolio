@@ -33,6 +33,7 @@ router.get('/contact',(req,res)=>{
   return res.json({msg:'holamundo'})
 })
 
+
 router.post("/contact", (req, res) => {
   const {firstName,lastName,email,message,phone}= req.body
   console.log(req.body)
