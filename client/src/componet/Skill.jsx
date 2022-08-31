@@ -8,7 +8,7 @@ import  nestjs  from "../assets/img/nestjs.png";
 import  Ts  from "../assets/img/Ts.png";
 import  Js  from "../assets/img/js.png";
 import  Reactjs  from "../assets/img/Reactjs.png";
-import  coloSharp  from "../assets/img/colorSharp.jpg";
+
 
 const Skill = () => {
     const responsive = {
@@ -38,7 +38,7 @@ const Skill = () => {
                 <h2>
                     Skills
                 </h2>
-                <p>Estas son las skill que he adquirido con a lo largo de mi formacion </p>
+                <p>Estas son las tecnologia he dominado a lo largo de mi formacion </p>
                 <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                     <div className='item'>
                         <img src={mongo} alt='Image' />
@@ -69,7 +69,6 @@ const Skill = () => {
             </Col>
         </Row>
     </Container>
-    {/* <img className='background-image-left' src={coloSharp} alt="" /> */}
     </section>;
 }
 
