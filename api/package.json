@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "echo 'Bulding....(not actually doing something, bog usually i would)'",
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
+   
   },
   "author": "",
   "license": "ISC",
