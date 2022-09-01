@@ -27,7 +27,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await axios.post("https://porfolioapp.vercel.app/contact", formDetails
+    let response = await axios.post("https://porfolio-production.up.railway.app/contact", formDetails
     //  {
     //   method: "POST",
     //   headers: {
