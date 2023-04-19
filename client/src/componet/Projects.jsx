@@ -11,12 +11,12 @@ const Projects = () => {
   const projects = [
     {
       title:"Grow Up Books" ,
-      description: "Lorem ipsum dolor sit amet",
+      description: "Es un prototipo de un E-commerce, con pasarela de pago, en la que se implementó mercado pago como proveedor del servicio, está desarrollado con, Node.js y Express.js en el backend, MongoDB en la base de datos, React, Redux y CSS puro en el frontend",
       imgUrl: projects1,
     },
     {
       title: "pokeApi",
-      description: "Lorem ipsum dolor sit amet",
+      description: "Es un pequeño proyecto académico donde pongo en práctica los conocimientos en Node.js, PostgreSQL, react.js, CSS, Redux entre otras",
       imgUrl: projects2,
     },
   ];
@@ -35,8 +35,7 @@ const Projects = () => {
                   <h2>projects</h2>
                   <p>
                     {" "}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis dolorum neque pariatur nemo animi obcaecati!
+                    Aquí pueden encontrar una breve descripción de algunos de mis proyectos y tecnologías utilizadas
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -69,20 +68,12 @@ const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          a
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                         b
                         </p>
                       </Tab.Pane>
                     </Tab.Content>

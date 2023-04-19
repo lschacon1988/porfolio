@@ -8,6 +8,8 @@ import  nestjs  from "../assets/img/nestjs.png";
 import  Ts  from "../assets/img/Ts.png";
 import  Js  from "../assets/img/js.png";
 import  Reactjs  from "../assets/img/Reactjs.png";
+import  python  from "../assets/img/python.png";
+import  PostgreSQL  from "../assets/img/PostgreSQL.png";
 
 
 const Skill = () => {
@@ -45,6 +47,10 @@ const Skill = () => {
                         <h5></h5>
                     </div>
                     <div className='item'>
+                        <img src={PostgreSQL} alt='Image' />
+                        <h5></h5>
+                    </div>
+                    <div className='item'>
                         <img src={nodejs2} alt='Image' />
                         {/* <h5>Poke Api</h5> */}
                     </div>
@@ -54,6 +60,10 @@ const Skill = () => {
                     </div>
                     <div className='item'>
                         <img src={Js} alt='Image' />
+                        {/* <h5>Poke Api</h5> */}
+                    </div>
+                    <div className='item'>
+                        <img src={python} alt='Image' />
                         {/* <h5>Poke Api</h5> */}
                     </div>
                     <div className='item'>
